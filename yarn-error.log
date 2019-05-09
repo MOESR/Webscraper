@@ -1,0 +1,66 @@
+Arguments: 
+  /Users/oliverit/.nvm/versions/node/v11.13.0/bin/node /usr/local/Cellar/yarn/1.15.2/libexec/bin/yarn.js add cron
+
+PATH: 
+  /Users/oliverit/.nvm/versions/node/v11.13.0/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+
+Yarn version: 
+  1.15.2
+
+Node version: 
+  11.13.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received type object
+      at validateString (internal/validators.js:125:11)
+      at Object.isAbsolute (path.js:1026:5)
+      at module.exports.exports.default (/usr/local/Cellar/yarn/1.15.2/libexec/lib/cli.js:100201:16)
+      at /usr/local/Cellar/yarn/1.15.2/libexec/lib/cli.js:50823:63
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.15.2/libexec/lib/cli.js:304:30)
+      at /usr/local/Cellar/yarn/1.15.2/libexec/lib/cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "webscraping",
+    "version": "1.0.0",
+    "description": "Scrape website and request its information",
+    "main": "app.js",
+    "dependencies": {
+      "body-parser": "^1.19.0",
+      "cheerio": "^1.0.0-rc.2",
+      "dotenv": "^8.0.0",
+      "eslint": "^5.16.0",
+      "eslint-config-airbnb-base": "^13.1.0",
+      "eslint-config-oliver-base": "^3.1.0",
+      "eslint-plugin-import": "^2.17.2",
+      "express": "^4.16.4",
+      "got": "^9.6.0",
+      "jsonframe-cheerio": "^3.0.1",
+      "mongoose": "^5.5.5",
+      "morgan": "^1.9.1",
+      "nodemon": "^1.19.0",
+      "request": "^2.88.0"
+    },
+    "devDependencies": {
+      "@babel/preset-env": "^7.4.4",
+      "presets": [
+        "env"
+      ]
+    },
+    "scripts": {
+      "dev": "nodemon app.js",
+      "lint": "eslint ."
+    },
+    "author": "Reinout Moes",
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

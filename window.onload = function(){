@@ -1,0 +1,16 @@
+window.onload = function(){
+	var button = document.getElementById('league')
+	form = button.form;
+
+	form.addEventListener('submit', function(){
+		return false;
+	})
+
+	var times = 100;
+	(function submit(){
+		if(times == 0) return;
+		form.submit();
+		times--;
+		setTimeout(submit, 1000);
+	})
+}
