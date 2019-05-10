@@ -31,5 +31,8 @@
     "lint": "eslint ."
   },
   "author": "Reinout Moes",
-  "license": "ISC"
+  "license": "ISC",
+  "engines": {
+    "node": "6.9.0"
+  }
 }
